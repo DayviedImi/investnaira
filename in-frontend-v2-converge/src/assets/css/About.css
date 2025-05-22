@@ -1,0 +1,54 @@
+@import "../../assets/css/fonts.css";
+@import "../../App.css";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* width: fit-content; */
+  padding: 0 6em;
+  background-color: #d5f3e3;
+}
+.abCol1 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.abCol2 {
+  align-items: center;
+  justify-content: center;
+  height: 1562px !important;
+  display: flex;
+  margin: 0 100px;
+}
+.box2 {
+  background-color: #707070;
+}
+.box3 {
+  background-color: #4caf50;
+}
+.box3a {
+  display: none;
+}
+
+@media only screen and (max-width: 1260px) {
+  .wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 2em;
+  }
+  .abCol2 {
+    display: none;
+  }
+  .box3a {
+    display: flex;
+  }
+  .abCol1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .showMore {
+    display: none;
+  }
+}

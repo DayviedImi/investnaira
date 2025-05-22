@@ -1,0 +1,134 @@
+.profile {
+  width: calc(100% - 251px);
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.profileHeaders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  justify-content: flex-start;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 31px;
+  padding-top: 20px;
+  margin: 0 70px;
+}
+.profileDetails {
+  align-items: center;
+}
+.userPicture {
+  width: 114px;
+  height: 114px;
+  border-radius: 57px;
+  margin-top: 85px;
+}
+.userName {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 24px;
+  color: #4caf50;
+}
+.userEmail {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 12px;
+  color: #cccccc;
+  margin-bottom: 104px;
+}
+.homepage {
+  z-index: 2;
+  width: calc(100% - 251px);
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.profileText {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 18px;
+  margin-right: 15px;
+}
+.formRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 70px;
+  width: 87.5%;
+  text-align: left;
+}
+.bankForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 70px;
+}
+.userDetails {
+  width: calc(0.18 * 100vw) !important;
+  height: calc(0.03 * 100vw) !important;
+}
+.smallDetails {
+  width: calc(0.09 * 100vw) !important;
+}
+.numberDetails {
+  width: calc(0.13 * 100vw) !important;
+}
+.profileLabels {
+  font-size: 18px;
+  font-family: "AvenirNextCyr-Medium";
+  color: #999999;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.verifyButton {
+  width: 100%;
+  height: 46px;
+  background: var(--unnamed-color-395d45) 0% 0% no-repeat padding-box;
+  background: #395d45 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  margin-right: 0;
+}
+.bankEditForm {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  justify-content: flex-start;
+}
+.bankLabels {
+  font-size: 14px !important;
+  color: #999999 !important;
+  font-family: "AvenirNextCyr-Medium";
+  margin-top: 0 !important;
+  text-align: left;
+}
+#bankFormContainer {
+  display: flex;
+  align-items: flex-start !important;
+  flex-direction: column;
+}
+.bankField {
+  border: 1px solid #4caf50 !important;
+  border-radius: 5px !important;
+  height: 50px !important;
+  width: 180px !important;
+  padding: 0 10px !important;
+  background-color: white !important;
+}
+.bankLabelContainer {
+  margin-right: 13px;
+  width: 140px !important;
+}
+.bank-input-container {
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.profBut {
+  width: calc(0.21 * 100vw) !important;
+  margin-bottom: 0px !important;
+  top: 0px !important;
+}

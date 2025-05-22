@@ -1,0 +1,230 @@
+@import "./fonts.css";
+@import "../../App.css";
+
+/* #calculator {
+  margin: 100px 0;
+} */
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white !important;
+}
+.slider-column {
+  width: 80%;
+  text-align: left;
+  align-items: center;
+}
+.field {
+  color: "black!important";
+}
+label {
+  font-weight: bold;
+  font-family: AvenirNextCyr-Medium;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.flex .currency {
+  font-size: 14px;
+  padding: 5px;
+  color: "#cccccc";
+  border: 2px solid #b3b3b347;
+  border-right: 0;
+  border-radius: 7px 0 0 7px;
+  background: #f5fbf6;
+}
+.calcHeader {
+  font-size: 27px;
+}
+.form {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1em;
+}
+form input,
+form select {
+  font-size: 14px;
+  padding: 5px;
+  border: 2px solid#B3B3B347;
+  border-left: 0;
+  width: 100%;
+  background: #f5fbf6;
+  color: #cccccc;
+  border-radius: 0 7px 7px 0;
+  font-weight: bold;
+}
+form form input:focus {
+  outline: 0;
+}
+
+.horizontal-bar {
+  width: 100%;
+  background: #f5fbf6;
+  height: 18em;
+  z-index: -1;
+  top: 7em;
+  position: absolute;
+  /* display: hidden; */
+}
+.calcForm {
+  top: 2em;
+  position: relative;
+}
+h3 {
+  margin: 0;
+  color: #62b66c;
+  position: relative;
+  font-family: "AvenirNextCyr-Medium";
+}
+
+.calculator_column {
+  margin-left: 1em;
+}
+.card-container {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 10px;
+  padding: 2em;
+  margin: 0 1em;
+  width: 70%;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 5px 6px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 5px 6px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.input-range {
+  margin: 10px 0;
+  height: 0.5em;
+}
+label {
+  margin-top: 50px !important;
+}
+.calcSlider {
+  margin-top: 3em !important;
+  font-family: "AvenirNextCyr-Medium";
+}
+.money {
+  margin-left: 0 !important;
+  transition: all 1s ease;
+}
+.button-container {
+  width: 100%;
+  display: flex;
+  margin-top: 2em;
+  justify-content: flex-end;
+  align-items: center;
+}
+button {
+  color: #00a65a;
+  font-size: 0.67em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.button:active,
+.button:focus {
+  border: 1px solid #00a65a;
+  outline: #00a65a auto 1px;
+}
+.calculator_header {
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0;
+}
+.tbl_data {
+  padding: 0 0.25em 0 0 !important;
+  width: 5em;
+}
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 10px;
+}
+@media only screen and (min-width: 992px) {
+  #calculator {
+    align-items: center !important;
+    display: flex;
+    justify-content: center !important;
+  }
+  .tbl {
+    width: 70%;
+  }
+  .form {
+    padding: 2em;
+    text-align: center;
+  }
+  .calculator_column {
+    margin-left: 1em;
+  }
+  .money {
+    margin-left: 0 !important;
+  }
+
+  .calculator_header {
+    text-align: center;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  .horizontal-bar {
+    display: none;
+  }
+  .calc_controls {
+    position: absolute;
+    padding: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2;
+  }
+  .input-range__label--min,
+  .input-range__label--max {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card-container,
+  .slider-column {
+    width: 50%;
+  }
+  .horizontal-bar {
+    background: white;
+  }
+  .card-container {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column !important;
+    width: 90%;
+  }
+  .card-container {
+    top: 50px;
+    position: relative;
+  }
+  .slider-column {
+    width: 100%;
+  }
+  .controls,
+  .card-container,
+  .button-container {
+    width: 100%;
+  }
+  .card-container {
+    -webkit-box-shadow: none; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: none; /* Firefox 3.5 - 3.6 */
+    box-shadow: none; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    border: none;
+    background: none;
+  }
+}

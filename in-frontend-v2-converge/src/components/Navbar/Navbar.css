@@ -1,0 +1,271 @@
+@import "../../assets/css/fonts.css";
+
+.NavbarItems {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between !important ;
+  align-items: center;
+  font-size: 1.1rem;
+  z-index: 4;
+  margin: 0;
+  background-color: white;
+  margin-right: 66.52px;
+  /* height: 107px; */
+  font-family: "Montserrat", sans-serif;
+}
+.nav_right {
+  margin: 0 1em;
+  width: 10em;
+  justify-content: space-between;
+}
+.nav_right,
+.sub_nav_right {
+  display: flex;
+  flex-direction: row;
+  /* height: 107px; */
+  align-items: center;
+  justify-content: space-between;
+}
+.dropdown {
+  margin: 0;
+  padding: 0;
+  top: 60px;
+  right: 40px;
+  width: 350px;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: 10px;
+}
+.notificationsDropHeader {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  padding: 20px;
+}
+.notificationsFooter {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #ccc;
+  justify-content: space-between;
+  padding: 20px;
+}
+.notificationHeader {
+  color: #999999 !important;
+  margin: 0 !important;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 14px !important;
+}
+.seeAllButton {
+  color: #ccc !important;
+  margin: 0 !important;
+  font-family: "AvenirNextCyr-Regular" !important;
+  font-size: 14px !important;
+}
+.allNotifications {
+  margin: 0;
+  padding: 0;
+  bottom: 0px;
+  right: 0px;
+  width: 400px;
+  height: 90%;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.dropItem {
+  padding: 4px 8px;
+  border-bottom: 1px solid #e5e5e5;
+  color: #999999 !important;
+  font-family: "AvenirNextCyr-Regular";
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px;
+}
+
+.dropItem:last-child {
+  border-bottom: none;
+}
+.dropItem:hover {
+  background-color: #e5e5e5;
+  color: white;
+}
+
+.bell {
+  fill: #4caf50;
+  height: 30px;
+  width: 26px;
+}
+.out {
+  margin-right: 0.5em;
+}
+.logout_text {
+  color: red;
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 18px;
+  cursor: pointer;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.txt {
+  font-family: "AvenirNextCyr-Bold";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  margin-left: 5em;
+}
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+.navbar-logo {
+  width: 45px;
+  height: 40px;
+  opacity: 1;
+  margin-left: 100px;
+}
+.logoGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo-text {
+  top: 40px;
+  height: 27px;
+  font-size: 22px;
+  letter-spacing: 0px;
+  color: #4caf30;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #4caf30;
+  opacity: 1;
+}
+.nav-menu {
+  text-align: center;
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+.nav-links {
+  top: 44px;
+  margin: 0 0.5em;
+  height: 18px;
+  color: #4caf30;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-family: AvenirNextCyr-Bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.navButton {
+  display: inline-block;
+  margin-right: 1em;
+  border-radius: 3px;
+  padding: 0.5rem 0;
+  background: #4caf30;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #4caf30;
+  width: 156px;
+  height: 46px;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  opacity: 1;
+}
+.navButton:hover,
+.nav-links:hover,
+.sub_nav_right:hover {
+  transform: scale(1.05);
+}
+.loginButton {
+  margin-right: 38px;
+  background: transparent;
+  color: #4caf50;
+  width: 107px;
+}
+.rightDashNav {
+  width: calc(100% - 262px);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 60px;
+  float: right;
+}
+.homeNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: 60px;
+  float: right;
+}
+.walletHeader {
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.wallet {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.walletIcon {
+  margin-right: 21px;
+}
+.walletText {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  color: #4caf50;
+  margin-left: 21px;
+}
+.walletDesc {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 14px;
+  color: #a2a2a2;
+  margin: 0;
+}
+/* .blink_me {
+  animation: blinker 1s linear infinite;
+  color: white;
+  -webkit-text-stroke: 1px #4caf50;
+  font-size: 1.2em;
+} */
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .NavbarItems {
+    display: none;
+  }
+}

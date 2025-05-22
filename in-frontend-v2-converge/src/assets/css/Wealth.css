@@ -1,0 +1,91 @@
+@import "../../assets/css/fonts.css";
+@import "../../App.css";
+
+.wealth {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6em;
+}
+.text1 {
+  height: 59px;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 47px;
+  text-align: left;
+  color: #4caf30;
+  opacity: 1;
+}
+.text2 {
+  width: 506px;
+  height: 56px;
+  margin-top: 34px;
+  text-align: left;
+  color: #707070;
+  opacity: 1;
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 20px;
+}
+
+.signup {
+  width: 100% !important;
+}
+
+.storeButtons {
+  display: flex;
+  flex-direction: row;
+}
+.google {
+  width: 196px;
+  height: 60px;
+  opacity: 1;
+  margin-right: 10px;
+}
+.apple {
+  width: 196px;
+  height: 60px;
+  opacity: 1;
+}
+.leftContent {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.startButton {
+  width: 402px;
+  height: 60px;
+  margin: 54px 0;
+  background: #4caf30;
+  display: inline-block;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #4caf30;
+}
+
+@media only screen and (max-width: 1080px) {
+  .wealth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    left: 1.5em;
+  }
+  .flower2 {
+    width: 90%;
+  }
+  .text1,
+  .text2 {
+    top: 50px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: 80px 0;
+  }
+  .leftContent {
+    display: flex;
+    align-items: center;
+  }
+}

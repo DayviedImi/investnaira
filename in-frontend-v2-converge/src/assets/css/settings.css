@@ -1,0 +1,176 @@
+.settings {
+  width: calc(100% - 251px);
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.settingsBox {
+  margin: 30px;
+  /* height: 500px; */
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e3e7e4;
+  border-radius: 15px;
+  width: 80%;
+  padding: 1%;
+}
+.activeTab {
+  color: #4caf50;
+  border-bottom: 3px solid #4caf50;
+}
+.settingTabs {
+  text-align: left !important;
+}
+.passwordRow {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+}
+.settingHeaders {
+  font-size: 14px;
+  font-family: "AvenirNextCyr-Medium";
+  color: #999999;
+  text-align: left;
+  margin-top: 20px;
+}
+.settingsField {
+  width: 100% !important;
+  height: 32px !important;
+  background: var(--unnamed-color-f5fbf6) 0% 0% no-repeat padding-box;
+  background: #f5fbf6 0% 0% no-repeat padding-box;
+  border: 1px solid #e3e7e4;
+  padding: 0.5rem !important;
+  border-radius: 5px;
+  font-family: "AvenirNextCyr-Medium" !important;
+  font-size: 14px !important;
+  font-weight: normal !important;
+}
+.settings-input-container {
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+.settings-submit {
+  width: 100% !important;
+  top: 0 !important;
+  margin: 0 !important;
+  font-size: 11px !important;
+}
+.referrals {
+  text-align: left;
+  width: 60%;
+}
+.referralsHeader {
+  font-size: 24px;
+  font-family: "AvenirNextCyr-Medium";
+  color: #4caf50;
+}
+.referralsText {
+  font-size: 18px;
+  font-family: "AvenirNextCyr-Regular";
+  color: #999999;
+  width: 75%;
+}
+.refRow {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-direction: row; */
+  width: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.wrap {
+  display: inline-block;
+  position: relative;
+  width: 60%;
+  margin-right: 40px;
+}
+.refIcon {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: 3px solid #b3b3b3;
+  background: #f5fbf6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.refContainer {
+  display: flex;
+  flex-flow: row wrap;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+.settingsFieldButton {
+  padding: 0.5rem;
+  position: absolute;
+  right: -30px;
+  width: fit-content !important;
+  height: 100% !important;
+  top: 0px;
+  cursor: pointer;
+}
+.customerCareIcon {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.customForm {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+.faqContainer {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-flow: row wrap;
+  /* flex-direction: row; */
+}
+.faqHeaders {
+  background-color: #f8f8f8;
+  width: 25%;
+  height: 416px;
+  overflow-y: scroll;
+  padding-left: 30px;
+  padding-right: 20px;
+  top: -10px;
+  position: relative;
+  text-align: left;
+  border-bottom-left-radius: 15px;
+}
+.faq {
+  font-size: 14px;
+  font-family: "AvenirNextCyr-Medium";
+  color: #707070;
+}
+.faqDetails {
+  width: 75%;
+  height: 416px;
+  top: -10px;
+  position: relative;
+  overflow-y: scroll;
+  padding-left: 30px;
+  text-align: left;
+}
+.faqHeader {
+  font-size: 16px;
+  font-family: "AvenirNextCyr-Bold";
+  color: #707070;
+}
+.question {
+  cursor: pointer;
+}
+.active p {
+  color: #4caf50 !important;
+}

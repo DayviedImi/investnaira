@@ -1,0 +1,598 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.homepage {
+  z-index: 2;
+  width: calc(100% - 251px);
+  float: right;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.helper {
+  --reactour-accent: #4caf50;
+  line-height: 1.3;
+  color: #707070;
+}
+.creatingBackground {
+  backdrop-filter: blur(8px);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+.creatingContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 1;
+  z-index: 20;
+}
+.deleteConfirmCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10;
+  flex-direction: column;
+  text-align: center;
+  width: 100% !important;
+}
+.createTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.closeModal {
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+  width: 100%;
+}
+.createPlanModalHeader {
+  flex: 11;
+}
+.closeModalText {
+  color: red;
+  text-decoration: none;
+  font-family: "AvenirNextCyr-Regular";
+  margin: 0;
+  flex: 1;
+  text-align: right;
+}
+.closeModalHeader {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 24px;
+  color: #4caf50;
+}
+.closeModalDescription {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 16px;
+  color: #707070;
+}
+.delButCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.creatingBox {
+  width: 350px;
+  height: fit-content;
+  background-color: white;
+  z-index: 3;
+  border-radius: 14px;
+  padding: 20px;
+  /* overflow-y: auto; */
+  border: 1px solid #ccc;
+}
+.fundBox {
+  background: #ffffff;
+  border: 0.2px solid #707070;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+  margin: 20px 0;
+}
+.fundBox:hover,
+.paymentChannels:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.01);
+  border: 0.2px solid #4caf50;
+}
+.fundType {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10px;
+}
+.fundTypeName {
+  text-align: left;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 15px;
+  margin: 0;
+}
+
+.fundTypeDetails {
+  text-align: left;
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 13px;
+  margin: 0;
+}
+.createInput {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  color: #707070;
+}
+.initialDepRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center !important;
+}
+.mergedField {
+  width: 81.5%;
+  height: 38px;
+  position: relative;
+  top: 8px;
+}
+.p {
+  text-align: left;
+  margin-top: 10px;
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 15px;
+}
+.calculatorContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.calculatorResults {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex: 1;
+}
+.individualResult {
+  width: 100%;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #71a873;
+  color: white;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  justify-self: start;
+  justify-content: flex-start;
+  font-family: "AvenirNextCyr-Regular";
+}
+.fundRow1,
+.fundRow2,
+.paymentChannels {
+  display: flex;
+  flex-direction: row;
+}
+.fundRow1 {
+  justify-content: space-between;
+  align-items: center;
+}
+.amountCol {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  width: 50%;
+}
+.fundPlanName {
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 18px;
+  color: #4caf50;
+}
+.fundPlanEdit {
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 15px;
+  color: #d01919;
+}
+.fundPlanAmountHeader {
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 14px;
+  color: #2c2c2c;
+}
+.paymentChannels {
+  background: #ffffff;
+  border: 0.2px solid #4caf50;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin: 15px 5px;
+  padding: 10px;
+}
+.paymentNames {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 15px;
+  color: #2c2c2c;
+  margin-left: 10px;
+}
+.doneModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.doneText {
+  color: #2c2c2c;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 13px;
+  text-align: center;
+  margin: 20px;
+}
+.createButton {
+  width: 100%;
+  height: 30px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 40px;
+  background: #419be0;
+}
+
+.slick-slide img {
+  margin: auto;
+}
+.plans {
+  height: 443px;
+  display: flex;
+  justify-content: space-between;
+}
+.planContainer {
+  height: 443px;
+  width: 100%;
+  position: absolute;
+  background-color: #f8f8f8;
+   /* background-image: url("../images/background.jpg");  */
+   filter: blur(4px);
+  -webkit-filter: blur(4px); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.convergeBackground {
+  height: 443px;
+  width: 100%;
+  position: absolute;
+  background-image: url("../svg/back.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.convergeButton {
+  color: #4caf50 !important;
+  border-width: 0;
+  background-color: white !important;
+}
+.convergeClear {
+  color: white !important;
+  border-width: 0;
+  width: auto !important;
+  border: 1px solid white;
+  padding: 17px 30px;
+  background-color: rgba(0, 0, 0, 0.01) !important;
+}
+.welcome {
+  font-family: "AvenirNextCyr-Regular";
+  color: white;
+  text-align: left;
+  font-size: 28px;
+  padding: 30px;
+}
+.plan {
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+.planRow {
+  display: flex;
+  /* width: 100%; */
+  padding: 44px 39px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.planFundContainer {
+  border-radius: 15px;
+  width: 115px;
+  height: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planName,
+.planBalance,
+.matDate,
+.planFund {
+  font-size: 18px;
+  font-family: "AvenirNextCyr-Regular";
+  margin: 0;
+  text-align: left;
+}
+.planBalance {
+  color: #4caf50;
+  font-size: 36px;
+}
+.planFund {
+  color: white;
+  font-size: 14px;
+}
+.progressCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.progressContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.deleteText {
+  color: red;
+  text-decoration: underline;
+  font-family: "AvenirNextCyr-Regular";
+}
+.progressBarContainer {
+  width: 47px;
+}
+.progressDetails {
+  margin: 0 10px;
+}
+.progressPercentage {
+  color: #4caf50;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 30px;
+  margin: 0;
+}
+.progressTarget {
+  color: #999999;
+  font-size: 12px;
+  margin: 0;
+  font-family: "AvenirNextCyr-Regular";
+}
+.matDateContainer {
+  background-color: #4caf50;
+  border-radius: 0 0 20px 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.matDate {
+  color: white;
+  font-size: 12px;
+}
+.moreRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.moreText {
+  color: #4caf50;
+  cursor: pointer;
+  margin: 0 4px;
+}
+.changeCol {
+  display: flex;
+  justify-content: flex-end;
+}
+.changeItem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 15px;
+  margin: 20px;
+}
+.changeItem:hover {
+  background-color: #707070;
+  border-radius: 20px;
+}
+.newPlanItem {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.plusCircle {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.plusText {
+  color: #4caf50;
+  margin: 0;
+  position: relative;
+  font-weight: bold;
+}
+.change {
+  color: white;
+  cursor: pointer;
+  text-align: right;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.createPlanButton {
+  margin-right: 0;
+  padding: 0 4px;
+  width: 170px;
+}
+
+.kidContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.kidCard {
+  height: 73px;
+  width: 15%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin: 10px 0.5%;
+  padding: 0 1.125em;
+}
+.kidId {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kids {
+  padding: 30px;
+  text-align: left;
+  width: 95%;
+}
+.kidsName {
+  font-size: 1.125em;
+  font-family: "AvenirNextCyr-Regular";
+  color: #4caf50;
+}
+.kidImage {
+  width: 2.375em;
+  height: 2.375em;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.walletContainer {
+  width: 69px;
+  height: 31px;
+  text-align: right;
+}
+.walletBalance {
+  font-size: 0.625em;
+  color: #707070;
+  margin: 0 0 5px 0;
+  font-family: "AvenirNextCyr-Regular";
+}
+.walletAmount {
+  font-size: 0.75em;
+  color: #707070;
+  margin: 0;
+  font-family: "AvenirNextCyr-Bold";
+}
+.transHeader {
+  font-size: 14px;
+  font-family: "AvenirNextCyr-Medium";
+  text-align: center;
+  color: #999999;
+}
+.transBody {
+  padding: 16px 0;
+}
+.transDesc {
+  font-size: 1.125em;
+  font-family: "AvenirNextCyr-Medium";
+  color: #6e7272;
+}
+.transAmount {
+  font-size: 1.125em;
+  font-family: "AvenirNextCyr-Bold";
+}
+.transStatus {
+  border-radius: 8px;
+  font-size: 0.875em;
+  font-family: "AvenirNextCyr-Bold";
+  border-radius: "8px";
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.viewButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viewButton {
+  width: 148px;
+  height: 48px;
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  border: 0;
+  opacity: 1;
+}
+.field-icon {
+  text-align: right;
+  float: right;
+  /* left: ; */
+  right: 90px;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+  color: #707070;
+  font-family: "AvenirNextCyr-Regular";
+  cursor: pointer;
+}
+/* .passwordCon {
+  left: 45px;
+} */
+@media only screen and (max-width: 1280px) {
+  .kidCard {
+    width: 30% !important;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .homepage,
+  .profile,
+  .settings {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .kidCard {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .kidCard {
+    width: 50% !important;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .kidCard {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+}

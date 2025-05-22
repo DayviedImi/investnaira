@@ -1,0 +1,484 @@
+.fundraisers {
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.conHeader {
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+.conLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.fundraiserContainer {
+  height: 375px;
+  width: 235px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+.fundContainer {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fundHeader {
+  font-size: 1em;
+  font-family: "AvenirNextCyr-Medium";
+  color: #4caf50;
+  margin-bottom: 5px;
+  margin-top: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fundHeaderText {
+  font-size: 1em;
+  font-family: "AvenirNextCyr-Bold";
+  color: #707070;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+.fundDesc {
+  font-size: 0.875em;
+  font-family: "AvenirNextCyr-Regular";
+  color: #707070;
+  margin-bottom: 20px;
+  margin-top: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fundDescText {
+  margin-bottom: 0;
+}
+.horizontalBar {
+  height: 4px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #4caf50;
+}
+.fundDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+@media only screen and (max-width: 1000px) {
+  .fundDetailsContainer {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .convergeBox {
+    margin: 5px !important;
+  }
+}
+.textConOverView,
+.textCon {
+  border-right: 1px solid #e6e6e6;
+  padding-top: 0;
+  padding-right: 20px;
+  text-align: center;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+.comingSoon {
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comingSoonContainer {
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+.comingSoonText {
+  color: #4caf50;
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 13;
+}
+.conContainer {
+  height: 266px;
+  display: flex;
+}
+.convergeContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.convergeOverviewBackground {
+  height: 266px;
+  width: 100%;
+  position: absolute;
+  background-image: url("../svg/convergeBackBranch.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.convergeOverviewHeader {
+  font-size: 32px;
+  font-family: "AvenirNextCyr-Bold";
+  margin-bottom: 20px;
+}
+.convergeHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.activeConverge {
+  color: #4caf50 !important;
+}
+.convergeBox {
+  margin: 30px 90px;
+  height: 500px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.tabHeader {
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 16px !important;
+  margin: 0;
+}
+.conFundDetails {
+  display: flex;
+  justify-content: space-between;
+  text-align: left !important;
+  color: #707070;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  flex-direction: column;
+}
+.conFundSubmit {
+  display: flex;
+  flex-direction: row;
+}
+.convergeSubmit {
+  width: 190px !important;
+  height: 50px !important;
+  margin-top: 100px !important;
+  margin-right: 30px !important;
+}
+.donation {
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+.greyedOut {
+  background-color: #cccccc !important;
+}
+.donationBox {
+  height: 455px;
+  width: 470px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px #707070;
+  margin: 30px 90px;
+  margin-left: 0;
+  padding: 44px;
+}
+.raisedAmount {
+  font-size: 24px;
+  text-align: left;
+  font-family: "AvenirNextCyr-Bold";
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+.donationDivider {
+  background-color: #4caf50;
+  border: 4;
+  height: 4;
+  border: 1px solid #4caf50;
+}
+.donationButtons {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.textBox {
+  width: 800px !important;
+  height: 160px !important;
+  border: 1px solid #cccccc !important;
+  border-radius: 8px !important;
+  background-color: #f8f8f8 !important;
+  resize: none;
+  padding: 25px;
+}
+.textBox:focus {
+  border-color: #4caf50 !important;
+}
+.shareModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80%;
+}
+.convergeForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 107px);
+  padding: 0;
+  margin-left: 241px;
+}
+.convergeFormHeader {
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 64px;
+  color: #4caf50 !important;
+  text-decoration: underline;
+}
+.convergeFormSub {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 40px;
+  color: #707070 !important;
+}
+.convergeSwitch {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 2px solid #4caf50;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  color: #4caf50;
+}
+.buttonText {
+  font-size: 14px;
+  font-family: "AvenirNextCyr-Bold";
+  margin-right: 15px;
+}
+.convergeFormBox {
+  text-align: left !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 21px !important;
+}
+.convergeFormField {
+  font-family: "AvenirNextCyr-Medium";
+  resize: "none";
+  width: 563px;
+  text-align: left !important;
+  align-items: flex-start;
+  font-size: 21px;
+  resize: none;
+  color: #707070;
+}
+.convergeSector {
+  margin-right: 20px;
+  border: 1px solid #707070;
+  font-size: 14px;
+  font-family: "AvenirNextCyr-Medium";
+  color: #999999;
+  padding: 9px 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.convergeSector:hover {
+  transform: scale(1.1);
+}
+.selectedSector {
+  border: 1px solid #4cfa50;
+  color: #4caf50;
+}
+.conLabel {
+  font-size: 21px;
+}
+.customRadio {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  width: 563px;
+  font-size: 21px;
+  font-family: "AvenirNextCyr-Medium";
+  color: "#707070";
+  align-items: center !important;
+  margin-top: 20px !important;
+}
+.customRadioLabel {
+  position: relative;
+  left: 35px;
+}
+
+.customRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #707070;
+  background-color: #f5fbf6;
+  border-radius: 5px;
+}
+
+.customRadio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.customRadio input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customRadio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.customRadio .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.uploadContainer {
+  width: 563px;
+  border-radius: 5px;
+  border: 1px solid #e3e7e4;
+  background-color: #f5fbf6;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 5px;
+  align-items: center;
+}
+.conDashHeaderContainer {
+  text-align: left;
+  margin-left: 17px;
+}
+.conDashHeader {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 28px;
+  color: #4caf50;
+  margin: 28px 0;
+}
+.campaignSumContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+}
+.campaignSumName {
+  font-family: "AvenirNextCyr-Regular";
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+.campaignSumNumber {
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 28px;
+  margin: 0;
+}
+.campaignSumBox {
+  padding: 17px 35px;
+  border-radius: 17px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.activeCamp {
+  border-bottom: 1px solid #4caf50;
+  color: #4caf50;
+}
+.campaignItem {
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  padding: 20px 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.trashContainer {
+  border-radius: 50%;
+  border: 1px solid #cccccc;
+  padding: 15px;
+  cursor: pointer;
+}
+.trashContainer:hover {
+  transform: scale(1.1);
+  background-color: #cccccd;
+}
+.conSector {
+  width: 110px;
+  text-align: center;
+  height: 36px;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.conType {
+  font-size: 18px;
+  margin: 0;
+  border-radius: 10px;
+  font-family: "AvenirNextCyr-Bold";
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_pic {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}

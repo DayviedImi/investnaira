@@ -1,0 +1,352 @@
+.halfActions {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.actionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalBackground {
+  height: 100%;
+  background-color: 0, 0, 0, 0.5;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% - 251px);
+  float: right;
+  top: -15px;
+}
+
+.transferContainer {
+  margin-top: 10px;
+  width: 435px;
+  height: 498px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #6e727247;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: left;
+}
+.transCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.transferHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.transferLabel {
+  font-size: 14px;
+  text-align: left;
+  font-family: "AvenirNextCyr-Regular";
+  letter-spacing: 0px;
+  color: #707070;
+  margin: 0;
+}
+.amount {
+  margin: 10px 0 20px 0;
+}
+.transferHead {
+  font-size: 18px;
+  text-align: left;
+  font-family: "AvenirNextCyr-Bold";
+  letter-spacing: 0px;
+  color: #4caf50;
+  margin: 0;
+}
+.transferDetails {
+  font-size: 14px;
+  text-align: left;
+  font-family: "AvenirNextCyr-Regular";
+  letter-spacing: 0px;
+  color: #a2a2a2;
+  margin: 0;
+  margin-bottom: 23px;
+}
+.transferkidsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.transferModalButton {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.transButton {
+  margin: 0;
+}
+.transRow {
+  display: flex;
+  flex-direction: row;
+  width: 95% !important;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cardNumber {
+  font-size: 15px;
+  font-family: "AvenirNextCyr-Bold";
+  color: #395d45;
+  margin: 0;
+}
+.cardType {
+  font-size: 8px;
+  font-family: "AvenirNextCyr-Regular";
+  color: #999999;
+  margin: 0;
+}
+.cardExpiry {
+  font-size: 12px;
+  font-family: "AvenirNextCyr-Regular";
+  color: #999999;
+  margin: 0;
+}
+.cardDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.walletActionsContainer {
+  text-align: left;
+  margin: 0 2%;
+  display: flex;
+  width: 25%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.quickActionsContainer {
+  display: flex;
+  flex-direction: row;
+}
+.addCardText {
+  color: #4caf50;
+  width: 90%;
+  height: 36px;
+}
+.quickAction {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 10px 20px #8a959e21;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 10px 0 0;
+}
+.quickAction:hover {
+  transform: scale(1.05);
+}
+.quickActionText {
+  font-family: "AvenirNextCyr-Regular";
+  font-size: 10px;
+}
+.quickTransferContainer {
+  width: 45%;
+  /* height: calc(0.25 * 100vw); */
+  border: 1px solid #cccccc;
+  border-radius: 14px;
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.quickTransferRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+}
+.quick {
+  color: #4caf50;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 18px;
+  margin: 0 0 29px 0;
+  width: 300px !important;
+}
+.addCard {
+  width: 250px !important;
+  height: 200px;
+  border: 1px dashed #4caf50;
+  background: #ffffff;
+  border: 1px dashed #4caf50;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.chooseCard {
+  width: 100% !important;
+  /* height: calc(0.08 * 100vh); */
+  border: 1px solid var(--unnamed-color-b3b3b347);
+  background: #f8f8f8 0% 0% no-repeat padding-box;
+  border: 1px solid #b3b3b347;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  padding: 10px;
+}
+.amountCard {
+  width: calc(0.1 * 100vw);
+  height: calc(0.04 * 100vh);
+  background: var(--unnamed-color-f5fbf6) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-b3b3b347);
+  background: #f5fbf6 0% 0% no-repeat padding-box;
+  border: 1px solid #b3b3b347;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 0 21px;
+}
+.amountBox {
+  margin-left: 13px;
+}
+.kidsContainer {
+  display: flex;
+  flex-direction: row;
+  width: calc(0.16 * 100vw);
+  overflow-y: hidden;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.kidContainer {
+  margin-right: 27px;
+  margin-top: 10px;
+  /* padding: 1px; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.kidPicture {
+  width: 50px;
+  background-color: white;
+  height: 50px;
+  margin: 7.5px 0;
+  border-radius: 25px;
+}
+.transferButton {
+  width: calc(0.19 * 100vw);
+  height: 50px;
+  background: #cccccc 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+  margin: 30px 20px 0 20px;
+}
+.addButton {
+  width: 80%;
+  height: 30px;
+  background: #cccccc 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 5px;
+}
+.addKid {
+  background-color: #4caf50 !important;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  border-color: #4caf50;
+  display: flex;
+  position: relative;
+}
+.kidName {
+  text-align: center;
+  font-size: 10px;
+  color: #999999;
+  font-family: "AvenirNextCyr-Regular";
+}
+.walletTexts {
+  text-align: left;
+  font: "AvenirNextCyr-Regular";
+  letter-spacing: 0px;
+  font-size: 14px;
+  color: #999999;
+  width: 250px;
+  margin: 0;
+}
+.addTexts {
+  text-align: left !important;
+  font: "AvenirNextCyr-Regular";
+  letter-spacing: 0px;
+  font-size: 14px;
+  color: #999999;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+  .actionsContainer {
+    flex-direction: column;
+  }
+  .halfActions {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .quickTransferContainer {
+    margin-top: 20px;
+    width: 80%;
+    height: 100%;
+  }
+  .chooseCard {
+    width: calc(0.3 * 100vw);
+  }
+  .amountCard {
+    width: calc(0.13 * 100vw);
+  }
+  .kidsContainer {
+    width: calc(0.35 * 100vw);
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .halfActions {
+    width: 80%;
+    height: 100%;
+  }
+  .walletActionsContainer {
+    width: 100%;
+  }
+  .quickAction {
+    width: calc(0.12 * 100vw);
+    height: calc(0.12 * 100vw);
+    border-radius: calc(0.014 * 100vw);
+    margin: calc(0.02 * 100vw);
+  }
+  .quickTransferContainer {
+    width: 80%;
+    height: 100%;
+  }
+  .chooseCard {
+    width: calc(0.3 * 100vw);
+    font-size: 12px;
+    /* height: 100%; */
+  }
+  .amountCard {
+    width: calc(0.13 * 100vw);
+  }
+  .kidsContainer {
+    width: calc(0.35 * 100vw);
+    margin-right: 10px;
+  }
+}

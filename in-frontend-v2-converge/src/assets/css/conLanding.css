@@ -1,0 +1,44 @@
+.conLanding {
+  display: flex;
+  padding: 0 6em;
+  flex-flow: row wrap;
+}
+.conover {
+  width: 100vw !important;
+}
+.conLander {
+  height: 90%;
+  /* width: 100%; */
+}
+.conLandingRight {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 80%;
+}
+.conLandingStart {
+  font-family: "AvenirNextCyr-Regular";
+  color: #707070;
+  font-size: 28px;
+}
+.conButton {
+  margin: 0;
+}
+.con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conSearch {
+  width: 40%;
+}
+.fundSec {
+  justify-content: center !important;
+  width: 100% !important;
+}

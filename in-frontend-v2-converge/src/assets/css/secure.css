@@ -1,0 +1,85 @@
+@import "../../assets/css/fonts.css";
+@import "../../App.css";
+
+.secure {
+  position: relative;
+  top: 16em;
+  left: 0;
+  z-index: -1;
+  height: 195px;
+  display: flex;
+  justify-content: center;
+  background-color: #f0fbf5;
+}
+.secureContainer {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12em;
+}
+.secureText {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.security {
+  left: 312px;
+  width: 314px;
+  height: 284px;
+  opacity: 1;
+}
+.txt6 {
+  left: 913px;
+  width: 560px;
+  height: 52px;
+  font-family: "AvenirNextCyr-Bold";
+  font-size: 42px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #4caf30;
+  opacity: 1;
+}
+.txt7 {
+  margin-top: 10px;
+  margin-left: 40.36px;
+  left: 818px;
+  height: 48px;
+  text-align: center;
+  color: #999999;
+  opacity: 1;
+  font-family: "AvenirNextCyr-Medium";
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+@media only screen and (max-width: 1080px) {
+  .secure {
+    padding: 4em 2em;
+    /* top: 35em; */
+    height: 400px;
+  }
+  .secureContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .txt6 {
+    font-size: 36px;
+    width: 90%;
+  }
+  .txt7 {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 0;
+    width: 90%;
+  }
+  .secureText {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+  }
+}

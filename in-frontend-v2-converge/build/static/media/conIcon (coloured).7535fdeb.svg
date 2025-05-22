@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.059" height="23.117" viewBox="0 0 32.059 23.117">
+  <defs>
+    <filter id="Converge" x="2.049" y="3.117" width="23" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="home-alt.3" x="0" y="3.006" width="19.198" height="18.931" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1160" data-name="Group 1160" transform="translate(70.214 -60)">
+    <g transform="matrix(1, 0, 0, 1, -70.21, 60)" filter="url(#Converge)">
+      <text id="Converge-2" data-name="Converge" transform="translate(11.05 10.12)" fill="#4caf50" font-size="1" font-family="AvenirNextCyr-Regular, Avenir Next Cyr"><tspan x="0" y="0">Converge</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -70.21, 60)" filter="url(#home-alt.3)">
+      <path id="home-alt.3-2" data-name="home-alt.3" d="M1.214,32.47.7,32.049a.117.117,0,0,0-.149,0L.04,32.47a.033.033,0,0,0,0,.047l.021.026a.033.033,0,0,0,.047,0L.161,32.5v.387a.067.067,0,0,0,.067.067H.494a.067.067,0,0,0,.067-.067v-.216H.694v.216a.067.067,0,0,0,.067.067h.266a.067.067,0,0,0,.067-.066V32.5l.057.047a.033.033,0,0,0,.047,0l.021-.026a.033.033,0,0,0,0-.047Zm-.221.384h-.2v-.216a.067.067,0,0,0-.067-.067h-.2a.067.067,0,0,0-.067.067v.216h-.2v-.436l.366-.3.366.3Z" transform="translate(8.97 -23.02)" fill="#4caf50"/>
+    </g>
+    <path id="people-carry.3" d="M5.575,4.177A2.088,2.088,0,1,0,3.487,2.088,2.089,2.089,0,0,0,5.575,4.177Zm16.707,0a2.088,2.088,0,1,0-2.088-2.088A2.089,2.089,0,0,0,22.282,4.177ZM26.111,10.9l-.827-3.411a2.537,2.537,0,0,0-1.458-1.71,2.5,2.5,0,0,0-2.236.1,5.412,5.412,0,0,0-2.036,2.88l-.531,1.51a.363.363,0,0,1-.148.187l-.77.439V5.569a.7.7,0,0,0-.7-.7H10.448a.7.7,0,0,0-.7.7V10.9l-.774-.439a.386.386,0,0,1-.148-.187L8.3,8.763a5.412,5.412,0,0,0-2.036-2.88,2.5,2.5,0,0,0-2.236-.1,2.559,2.559,0,0,0-1.458,1.71l-.822,3.415a2.535,2.535,0,0,0,.8,2.5l2.989,2.61a1.4,1.4,0,0,1,.474.935l.348,4.36a1.043,1.043,0,1,0,2.08-.165L8.055,16.4A2.531,2.531,0,0,0,7.2,14.7L4.927,12.713,6.006,8.706c.117.231.853,2.254.853,2.254a2.517,2.517,0,0,0,1,1.257l1.605.844a1.4,1.4,0,0,0,.648.161h7.636a1.4,1.4,0,0,0,.648-.161L20,12.217a2.517,2.517,0,0,0,1-1.257s.735-2.027.853-2.254l1.079,4.007L20.664,14.7a2.531,2.531,0,0,0-.857,1.7l-.383,4.747a1.043,1.043,0,0,0,2.08.165l.348-4.36a1.388,1.388,0,0,1,.474-.935l2.989-2.606a2.552,2.552,0,0,0,.8-2.506Zm-10.094.235H11.84V6.961h4.177Zm11.756,9.7-2.336-5.691L23.775,16.6l2.062,5.03a1.046,1.046,0,0,0,1.936-.792Zm-27.689,0a1.044,1.044,0,1,0,1.932.792L4.079,16.6,2.417,15.145.085,20.836Z" transform="translate(-66.006 60)" fill="#4caf50"/>
+  </g>
+</svg>

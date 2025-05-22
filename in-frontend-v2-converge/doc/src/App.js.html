@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="../doc-style.css" />
+  <script src="../doc-filelist.js"></script>
+  <script>
+    var relativeDir = "../";
+    var thisFile = "src\\App.js";
+    var defaultSidebar = true;
+  </script>
+  <script src="../doc-script.js"></script>
+
+</head>
+<body>
+  <div id="sidebar_wrapper">
+    <div id="sidebar_switch">
+      <span class="tree">Files</span>
+      <span class="headings">Headings</span>
+    </div>
+    <div id="tree"></div>
+    <div id="headings">
+
+    </div>
+  </div>
+  <div id="sidebar-toggle"></div>
+  <div id="container">
+    <div class="background highlight"></div>
+<table cellpadding="0" cellspacing="0">
+  <tbody>
+    
+      <tr>
+        <td class="docs">
+          <h1>App.js</h1>
+        </td>
+        <td class="code highlight"></td>
+      </tr>
+    
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-1" id="section-1"></a>
+</div>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">"react"</span>;
+<span class="hljs-keyword">import</span> { createStore, combineReducers, applyMiddleware, compose } <span class="hljs-keyword">from</span> <span class="hljs-string">"redux"</span>;
+<span class="hljs-keyword">import</span> { Provider } <span class="hljs-keyword">from</span> <span class="hljs-string">"react-redux"</span>;
+<span class="hljs-keyword">import</span> ReduxThunk <span class="hljs-keyword">from</span> <span class="hljs-string">"redux-thunk"</span>;
+<span class="hljs-keyword">import</span> * <span class="hljs-keyword">as</span> Sentry <span class="hljs-keyword">from</span> <span class="hljs-string">"@sentry/react"</span>;
+
+<span class="hljs-keyword">import</span> Main <span class="hljs-keyword">from</span> <span class="hljs-string">"./routes/main"</span>;
+<span class="hljs-keyword">import</span> authReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/auth"</span>;
+<span class="hljs-keyword">import</span> bankReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/bank"</span>;
+<span class="hljs-keyword">import</span> debitCardsReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/debitCards"</span>;
+<span class="hljs-keyword">import</span> childrenReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/children"</span>;
+<span class="hljs-keyword">import</span> notificationsReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/notifications"</span>;
+<span class="hljs-keyword">import</span> plansReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/plans"</span>;
+<span class="hljs-keyword">import</span> profileReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/profile"</span>;
+<span class="hljs-keyword">import</span> referralsReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/referrals"</span>;
+<span class="hljs-keyword">import</span> transactionsReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/transactions"</span>;
+<span class="hljs-keyword">import</span> virtualAcctReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/virtualAcct"</span>;
+<span class="hljs-keyword">import</span> walletReducer <span class="hljs-keyword">from</span> <span class="hljs-string">"./store/reducers/wallet"</span>;
+
+Sentry.init({
+  <span class="hljs-attr">dsn</span>: <span class="hljs-string">"https://25301377df914a91a66d31c4f367e1b9@o306522.ingest.sentry.io/5360596"</span>,
+  <span class="hljs-attr">debug</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">maxValueLength</span>: <span class="hljs-number">1000</span>,
+});
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-2" id="section-2"></a>
+</div>
+<p>combining all the reducers into one so all components can have access to the central store</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">const</span> appReducer = combineReducers({
+  <span class="hljs-attr">auth</span>: authReducer,
+  <span class="hljs-attr">bank</span>: bankReducer,
+  <span class="hljs-attr">children</span>: childrenReducer,
+  <span class="hljs-attr">debitCards</span>: debitCardsReducer,
+
+  <span class="hljs-attr">notifications</span>: notificationsReducer,
+  <span class="hljs-attr">plans</span>: plansReducer,
+  <span class="hljs-attr">profile</span>: profileReducer,
+  <span class="hljs-attr">referrals</span>: referralsReducer,
+  <span class="hljs-attr">transactions</span>: transactionsReducer,
+  <span class="hljs-attr">virtualAcct</span>: virtualAcctReducer,
+  <span class="hljs-attr">wallet</span>: walletReducer,
+});
+
+<span class="hljs-keyword">const</span> LOGOUT = <span class="hljs-string">"LOGOUT"</span>;
+
+<span class="hljs-keyword">const</span> rootReducer = <span class="hljs-function">(<span class="hljs-params">state, action</span>) =&gt;</span> {
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-3" id="section-3"></a>
+</div>
+<p>when a logout action is dispatched it will reset redux state</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript">  <span class="hljs-keyword">if</span> (action.type === LOGOUT) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"clearing store"</span>, store);
+    state = {}; <span class="hljs-comment">//Upon logout, just preserve these states, reset others to default</span>
+  }
+
+  <span class="hljs-keyword">return</span> appReducer(state, action);
+};
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-4" id="section-4"></a>
+</div>
+<p>Redux Dev tools setup</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">const</span> composeEnhancers = <span class="hljs-built_in">window</span>.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+</pre>
+        </td>
+      </tr>
+    
+      <tr>
+        <td class="docs">
+          <div class="pilwrap">
+  <a class="pilcrow" href="#section-5" id="section-5"></a>
+</div>
+<p>creating the redux store</p>
+
+        </td>
+        <td class="code highlight">
+          <pre class="javascript"><span class="hljs-keyword">const</span> store = createStore(rootReducer, composeEnhancers(applyMiddleware(ReduxThunk)));
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Provider</span> <span class="hljs-attr">store</span>=<span class="hljs-string">{store}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Main</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> App;
+
+</pre>
+        </td>
+      </tr>
+    
+  </tbody>
+</table>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "folders": [
+	{
+		"path": "..\\..\\..\\..\\..\\in-kids"
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\NodeJS"
+	},
+	{
+		"path": "..\\..\\.."
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\adonis-react"
+	},
+	{
+		"path": "..\\..\\..\\..\\..\\..\\Desktop\\in-frontend-v2"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "in-frontend-v2"
+  }
+}

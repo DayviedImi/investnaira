@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "AvenirNextCyr-Bold";
+  src: local("AvenirNextCyr-Bold"),
+    url(../fonts/AvenirNextCyr-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "AvenirNextCyr-Medium";
+  src: local("AvenirNextCyr-Medium"),
+    url(../fonts/AvenirNextCyr-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "AvenirNextCyr-Regular";
+  src: local("AvenirNextCyr-Regular"),
+    url(../fonts/AvenirNextCyr-Regular.ttf) format("truetype");
+}

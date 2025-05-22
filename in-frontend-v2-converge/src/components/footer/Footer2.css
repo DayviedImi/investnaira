@@ -1,0 +1,58 @@
+@import "../../assets/css/fonts.css";
+@import "../../../src/App.css";
+
+.footer2 {
+  width: 100%;
+  height: 50px;
+  background: #4caf30 0% 0% no-repeat padding-box;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footertext {
+  margin-left: 8em;
+  width: 100px;
+  height: 14px;
+  font-family: AvenirNexrCyr-Regular;
+  font-size: 11px;
+  text-align: right;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.social {
+  height: 50px;
+  margin-right: 2em;
+}
+.whatsapp {
+  background-color: transparent;
+  margin-right: 30px;
+  width: 14px;
+  height: 14px;
+  margin-top: 15px;
+  color: white;
+}
+@media only screen and (max-width: 768px) {
+  .footer2 {
+    height: 50px;
+  }
+  .footertext {
+    margin-top: 20px;
+    margin-left: 31px;
+    width: 86px;
+    height: 11px;
+    font-size: 10px;
+  }
+  .social {
+    margin-right: 10px;
+  }
+  .whatsapp {
+    background-color: transparent;
+    margin-right: 30px;
+    width: 5px;
+    height: 5px;
+    margin-top: 17px;
+    color: white;
+  }
+}
